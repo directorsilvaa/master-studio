@@ -1091,7 +1091,7 @@
 
       .brand-values__grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 24px;
       }
 
@@ -1105,6 +1105,10 @@
         box-shadow: 0 22px 46px rgba(0, 0, 0, 0.24);
       }
 
+      .brand-values__card--wide {
+        grid-column: 1 / -1;
+      }
+
       .brand-values__icon {
         display: inline-flex;
         align-items: center;
@@ -1116,7 +1120,7 @@
         background: linear-gradient(135deg, rgba(224, 178, 74, 0.2), rgba(200, 148, 47, 0.14));
         color: #f5d48b;
         font-family: "Manrope", Arial, sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 900;
       }
 
@@ -1134,6 +1138,26 @@
         font-family: "Manrope", Arial, sans-serif;
         font-size: 15px;
         line-height: 1.7;
+      }
+
+      .brand-values__list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin: 0;
+      }
+
+      .brand-values__item h4 {
+        margin: 0 0 6px;
+        color: #f5d48b;
+        font-family: "Manrope", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .brand-values__item p {
+        margin: 0;
       }
 
       .elementor-location-footer {
@@ -1271,6 +1295,10 @@
         }
 
         .brand-values__grid {
+          grid-template-columns: 1fr;
+        }
+
+        .brand-values__list {
           grid-template-columns: 1fr;
         }
 
@@ -2284,23 +2312,40 @@ height: auto;
 						<div class="brand-values__intro">
 							<span class="brand-values__eyebrow">Princípios e Valores</span>
 							<h2 class="brand-values__title">A base da experiência Master Studio</h2>
-							<p class="brand-values__text">Cada atendimento da Master Studio é guiado por capricho, transparência e compromisso com resultado real. A gente acredita que estética automotiva premium precisa unir técnica, confiança e experiência.</p>
+							<p class="brand-values__text">Cada atendimento da Master Studio é guiado por melhoria contínua, cuidado técnico e compromisso com superfícies automotivas restauradas, aprimoradas e protegidas com excelência.</p>
 						</div>
 						<div class="brand-values__grid">
 							<article class="brand-values__card">
-								<div class="brand-values__icon">P</div>
-								<h3>Princípios</h3>
-								<p>Responsabilidade, respeito ao cliente, cuidado técnico e atenção total aos detalhes em cada etapa do serviço.</p>
-							</article>
-							<article class="brand-values__card">
 								<div class="brand-values__icon">M</div>
 								<h3>Missão</h3>
-								<p>Entregar serviços de estética automotiva com padrão elevado, valorizando cada carro com acabamento premium e atendimento profissional.</p>
+								<p>Buscar a satisfação dos nossos clientes através da melhoria contínua dos processos, restaurando, aprimorando, cuidando e protegendo as superfícies automotivas. Assim, entregamos um serviço de excelência e altíssima qualidade.</p>
 							</article>
 							<article class="brand-values__card">
 								<div class="brand-values__icon">V</div>
-								<h3>Valores</h3>
-								<p>Capricho, honestidade, constância, excelência visual e compromisso com uma experiência que faça o cliente confiar e voltar.</p>
+								<h3>Visão</h3>
+								<p>Nos tornar referência em estética automotiva, como a empresa que mais cuida, preserva e protege as superfícies automotivas. Também queremos ser reconhecidos como a empresa que forma profissionais verdadeiramente qualificados para o mercado de estética automotiva.</p>
+							</article>
+							<article class="brand-values__card brand-values__card--wide">
+								<div class="brand-values__icon">VP</div>
+								<h3>Valores e Princípios</h3>
+								<div class="brand-values__list">
+									<div class="brand-values__item">
+										<h4>Respeito</h4>
+										<p>Às leis, ideias, posicionamentos, pessoas, diversidade e inclusão, valorização do capital humano e meio ambiente.</p>
+									</div>
+									<div class="brand-values__item">
+										<h4>Integridade</h4>
+										<p>Ética, transparência, honestidade e conformidade.</p>
+									</div>
+									<div class="brand-values__item">
+										<h4>Crescimento</h4>
+										<p>Criatividade, agilidade, ousadia, aprendizado contínuo, adaptabilidade e responsabilidade social.</p>
+									</div>
+									<div class="brand-values__item">
+										<h4>Foco no cliente</h4>
+										<p>Empatia, alinhamento de expectativas, paixão, excelência, qualidade e alta performance.</p>
+									</div>
+								</div>
 							</article>
 						</div>
 					</div>
